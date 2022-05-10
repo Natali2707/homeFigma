@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.media{
+  background:rgba(248, 239, 239, 1);
+  padding: 18px;
+  margin: 0 15px;
+  min-width: 1200px;
+display:flexbox;
+justify-content: space-around;
+}
+.container {
+  max-width: 1200px;
+  margin: o auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.media__head{
+  width: 470px;
+ text-align: left;
+ display: table-cell;
+vertical-align: middle;
+}
+
+.media__text{
+color: rgba(134, 135, 139, 1);
+padding: 18px 0;
+margin-right: 100px;
+width: 470px;
+}
+.media__navigator{
+text-align:right;
+align-items: center;
+display: table-cell;
+vertical-align: middle;
+}
+
+.media__icon{
+  margin-right: 23px;
+  
+}
+.why{
+  min-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 58px;
+}
+.section-head__title {
+  align-items: center;
+  font-family: "Raleway";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 50px;
+  display: inline-flex;
+  padding: 100px 0;
+
+}
+
+.section-head__separator {
+  width: 170px;
+  border: 1px solid rgba(236, 121, 121, 1);
+  margin-bottom: 40px;
+}
+.section-head__subtitle {
+  display: inline-flex;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 73px;
+}
+
+
+/* -------WHY----------- */
+.why{
+  padding-bottom: 170px;
+}
+
+.why__sign{
+  border: 1px solid rgba(236, 121, 121, 1);
+border-radius: 100%;
+
+}
+
+
+
+.why__row {
+  display: inline-flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 30px;
+}
+
+.why__card {
+  width: 370px;
+  height: 105px;
+  margin-bottom: 58px;
+}
+.lamp{
+margin-bottom: 52px;
+width: 65,29px;
+height: 52,35px;
+}
+.keyboard{
+  margin-bottom: 80px;
+  width: 66px;
+  height: 46 px;
+}
+.current{
+  margin-bottom: 52px;
+width: 44px;
+height: 66px;
+}
+.section-card__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  line-height: 32, 68px;
+}
+.section-card__text {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* -----Pricing------- */
+.pricing{
+  background:rgba(245, 245, 245, 1);
+  min-width: 1200px;
+}
+.pricing-row {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 1);
+}
+.pricing__card {
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+
+.cardBasic {
+  height: 60px;
+  margin-bottom: 0 15px;
+  background: rgba(51, 51, 51, 1);
+  width: 370px;
+  border: 2px solid rgba(245, 245, 245, 1);
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+.section-card__subtitle {
+  font-family: "Raleway";
+  font-size: 36px;
+  font-weight: 700;
+  height: 100px;
+  background: rgba(51, 51, 51, 1);
+  border: 2px solid rgba(245, 245, 245, 1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+}
+.section-card__title_size_small {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(51, 51, 51, 1);
+  border: 2px solid rgba(245, 245, 245, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-list__item {
+  background: #fff;
+  height: 50px;
+  border: 2px solid rgba(245, 245, 245, 1);
+  color: rgba(134, 135, 139, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -----WHAT---- */
+
+.what__row {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.what-text {
+  background: rgba(226, 226, 226, 1);
+  padding: 38px 0px 37px 0px;
+  margin: 0 15px;
+  height: 105px;
+  width: 370px;
+  box-sizing: content-box;
+}
+.what-title {
+  color: aqua;
+  /* display: flex; */
+}
+
+.stylish {
+  color: #fff;
+  display: inline-flex;
+  background: url("figma.png"), rgba(0, 0, 0, 0.5);
+/* height: 442px; */
+min-width: 1200px;
+margin: 0 15px;
+}
+.white {
+  border: 1px solid #fff;
+}
+.stylish__link {
+  display: inline-flex;
+  height: 58px;
+  font-size: 18px;
+  font-family: "open sans";
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 370px;
+  height: 58px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
