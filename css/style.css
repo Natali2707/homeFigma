@@ -75,6 +75,7 @@ vertical-align: middle;
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 73px;
+  padding-left: 40px;;
 }
 
 
@@ -84,9 +85,10 @@ vertical-align: middle;
 }
 
 .why__sign{
-  border: 1px solid rgba(236, 121, 121, 1);
-border-radius: 100%;
-
+width: 92px;
+height: 92px;
+border: 1px solid rgba(236, 121, 121, 1);
+border-radius: 50px;
 }
 
 
@@ -105,18 +107,12 @@ border-radius: 100%;
 }
 .lamp{
 margin-bottom: 52px;
-width: 65,29px;
-height: 52,35px;
 }
 .keyboard{
-  margin-bottom: 80px;
-  width: 66px;
-  height: 46 px;
+  margin-bottom: 60px;
 }
 .current{
-  margin-bottom: 52px;
-width: 44px;
-height: 66px;
+margin-bottom: 52px;
 }
 .section-card__title {
   display: block;
@@ -234,4 +230,7 @@ margin: 0 15px;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+.contact{
+  min-width: 1200px;
 }
