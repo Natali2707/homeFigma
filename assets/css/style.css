@@ -209,7 +209,7 @@ margin-bottom: 52px;
 .stylish {
   color: #fff;
   display: inline-flex;
-  background: url("figma.png"), rgba(0, 0, 0, 0.5);
+  background: url("/assets/image/figma.png"), rgba(0, 0, 0, 0.5);
 /* height: 442px; */
 min-width: 1200px;
 margin: 0 15px;
