@@ -68,7 +68,7 @@ html {
   padding-top: 50px;
   padding-bottom: 58px;
 } 
-.section-head{
+.head{
   width:100% ;
   margin-top: 50px;
   margin-bottom: 110px;
@@ -77,8 +77,9 @@ html {
 }
 .head__title {
   font-size: 36px;
+  text-transform: uppercase;
 } 
-.head__title:after{
+.head__title::after{
 content: "";
 display: block;
 width: 170px;
@@ -97,7 +98,7 @@ background-color: var(--accentColor);
 .col-4{
   width:calc(100% / 3 - var(--gutter) * 2);
   margin:0 15px;
-  text-align: center;
+  text-align: center;;
 }
 .why__icon{
   height: 92px;
@@ -112,9 +113,49 @@ background-color: var(--accentColor);
   font-family: "Open Sans";
   padding: 40px 0; 
 }
+/* -----Pricing------- */
 
+ .pricing{
+  background:rgba(245, 245, 245, 1);
+}
+.pricing__row {
+  color: rgba(255, 255, 255, 1); */ */
+}
+ .pricing__card {
+  background: rgba(51, 51, 51, 1);
+} 
+.pricing__card-title{
+font-family: "Open Sans";
+font-size: 24px;
+font-weight: 700;
+border: 2px solid rgba(245, 245, 245, 1);
+padding:20px ;
+}
+.pricing__card-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+border: 2px solid rgba(245, 245, 245, 1);
+padding: 30px;
+}
+.pricing__card-text{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF80;
+}
+.pricing__card_active{
+  transform: translatey(-20px);
+}
+.pricing__list-item {
+  background: #fff;
+  height: 50px;
+  border: 2px solid rgba(245, 245, 245, 1);
+  color: rgba(134, 135, 139, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-
+/* Review*/
 
