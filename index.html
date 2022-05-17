@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=1024" />
+    <!-- <meta name="viewport" content="width=1024" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,7 @@
     <section class="media">
       <div class="container">
         <div class="row media__row">
-          <div class="media__head">
+          <div class="media__head col-5">
             <h2 class="media__title">Social Media</h2>
             <p class="media__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -34,41 +34,67 @@
             </p>
           </div>
 
-          <ul class="media__navigator">
-            <li class="media__icon">
+          <ul class="media__navigator col-7">
+            <li class="media__item">
               <a
+                class="media__item-link"
                 href="https://www.facebook.com/campaign/landing.php?campaign_id=1557999815&extra_1=s%7Cc%7C294723539698%7Ce%7Cfacebook%7C&placement=&creative=294723539698&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1557999815%26adgroupid%3D58938663837%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001493%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw9-KTBhBcEiwAr19ig7r8ha5c56wpjyun-Ch14i4zzSlrOvSAOZ05gKmBYd6bdM8fkwKfABoCCZ4QAvD_BwE"
-                ><img src="./assets/image/media/facebook.svg" alt="facebook"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/facebook.svg"
+                  alt="facebook"
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://twitter.com/?lang=ru"
-                ><img src="./assets/image/media/twitter.svg" alt="twitter"
+            <li class="media__item">
+              <a class="media__item-link" href="https://twitter.com/?lang=ru"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/twitter.svg"
+                  alt="twitter"
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://ru.linkedin.com"
-                ><img src="./assets/image/media/linkedin.svg" alt="linkedin"
+            <li class="media__item">
+              <a class="media__item-link" href="https://ru.linkedin.com"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/linkedin.svg"
+                  alt="linkedin"
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://www.pinterest.com/"
-                ><img src="./assets/image/media/pinterest.svg" alt=""
+            <li class="media__item">
+              <a class="media__item-link" href="https://www.pinterest.com/"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/pinterest.svg"
+                  alt=""
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://www.instagram.com/accounts/login/"
-                ><img src="./assets/image/media/instagram.svg" alt="instagram"
+            <li class="media__item">
+              <a
+                class="media__item-link"
+                href="https://www.instagram.com/accounts/login/"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/instagram.svg"
+                  alt="instagram"
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://github.com/"
-                ><img src="./assets/image/media/github.svg" alt="instagram"
+            <li class="media__item">
+              <a class="media__item-link" href="https://github.com/"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/github.svg"
+                  alt="instagram"
               /></a>
             </li>
-            <li class="media__icon">
-              <a href="https://ru.wikipedia.org/wiki/RSS"
-                ><img src="./assets/image/media/rss.svg" alt="rss"
+            <li class="media__item">
+              <a
+                class="media__item-link"
+                href="https://ru.wikipedia.org/wiki/RSS"
+                ><img
+                  class="media__item-icon"
+                  src="./assets/image/media/rss.svg"
+                  alt="rss"
               /></a>
             </li>
           </ul>
@@ -89,7 +115,11 @@
 
         <div class="row">
           <div class="why__card col-4">
-            <img class="why__icon" src="./assets/image/why/lamp.svg" alt="lamp" />
+            <img
+              class="why__card-icon"
+              src="./assets/image/why/lamp.svg"
+              alt="lamp"
+            />
             <p class="why__card-title">Thoughtful Design</p>
             <p class="why__card-descr">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -101,7 +131,7 @@
 
           <div class="why__card col-4">
             <img
-              class="why__icon"
+              class="why__card-icon"
               src="./assets/image/why/keybord.svg"
               alt="keybord"
             />
@@ -115,7 +145,7 @@
           </div>
           <div class="why__card col-4">
             <img
-              class="why__icon"
+              class="why__card-icon"
               src="./assets/image/why/current.svg"
               alt="current"
             />
@@ -129,17 +159,17 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
     <!-- pricing options -->
-     <section class="pricing">
+    <section class="pricing">
       <div class="container">
         <div class="head">
           <h2 class="head__title">pricing options</h2>
           <div class="head__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
-        </div> 
+        </div>
 
         <div class="pricing__row row">
           <div class="pricing__card col-4">
@@ -186,9 +216,103 @@
           </div>
         </div>
       </div>
-    </section> 
-     <!-- Review--------------------- -->
+    </section>
+    <!-- Review--------------------- -->
+    <section class="review">
+      <div class="container">
+        <div class="head">
+          <div class="head__title">what our customers are saying</div>
+          <div class="head__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
 
-    
+        <div class="review__row row">
+          <div class="review__card col-4">
+            <div>
+              <p class="review__card-descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./assets/image/review/Davis.jpg"
+                alt="Davis"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Davis Rhiel Madsen</p>
+                <p class="review__author-job">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="review__card col-4">
+            <div>
+              <p class="review__card-descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./assets/image/review/Jaydon.jpg"
+                alt="Jaydon"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Davis Rhiel Madsen</p>
+                <p class="review__author-job">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="review__card col-4">
+            <div>
+              <p class="review__card-descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./assets/image/review/Cooper.jpg"
+                alt="Cooper"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Davis Rhiel Madsen</p>
+                <p class="review__author-job">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----  Stylish---------- -->
+
+    <section class="stylish">
+      <div class="container">
+        <div class="head">
+          <div class="head__title head__title_light">STYLISH AXURE DESIGN</div>
+          <div class="head__subtitle head__subtitle_light">
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </div>
+        </div>
+      <a
+        class="stylish__button prime-button"
+        href="./https://catalog.onliner.by/"
+        target="_blank"
+        >Download</a
+      >
+      </div>
+    </section>
   </body>
 </html>
