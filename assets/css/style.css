@@ -370,7 +370,7 @@ padding-bottom: 25px;
 
 /* Stylish */
 .stylish{
-  background: url(/assets/image/stylish/figma.png); 
+  background: url(../image/stylish/figma.png); 
   background-size: cover;
   background-attachment: fixed;
   background-position:center;
