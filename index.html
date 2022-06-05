@@ -27,20 +27,30 @@
   <body>
     
    <!-- Header -->
-   <header class="header">
+ <header class="header">
      <div class="container">
        <div class="header__row">
          <div class="header__logo">
       <img src="./assets/image/header/logo.png" alt="Logotip">
     </div>
     <nav class="header__navigator">
-    <ul class="header__list col-6">
+    <ul class="header__list">
       <li class="header__item">
         <a class="header__item-link" href="#">Features</a>
         </li>
-      <li class="header__item">
+      <li class="header__item header__menu-item_has-child">
         <a class="header__item-link" href="#">About</a>
-        </li>
+
+        <ul class="header__submenu">
+          <li class="header__submenu-item"><a href="" class="header__submenu-link">Company</a></li>
+             <li class="header__submenu-item"><a href="" class="header__submenu-link">Vacancy</a></li>
+             <li class="header__submenu-item"><a href="" class="header__submenu-link">Contacts</a></li>
+             <li class="header__submenu-item"><a href="" class="header__submenu-link">Teem</a></li>
+        </ul>
+
+
+
+    </li>
       <li class="header__item">
         <a class="header__item-link" href="#">Pricing</a>
         </li>
@@ -65,30 +75,30 @@
     <img src="./assets/image/promo/it.png" alt="it">
   </div>
   <!--   баннер -->
-  <div class="head promo-info__head">
-    <p class="promo__title head__title_light">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL<br> PROTOTYPES</p>
+  <div class="promo__head ">
+    <p class="promo__title">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL<br> PROTOTYPES</p>
   </div>
   
 
-  <p class="promo__subtitle head__subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+  <p class="promo__subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
 <!--    форма  -->
   <a
-  class="prime-button promo__button"
+  class="outline-button promo__button"
   href="./https://catalog.onliner.by/"
   target="_blank"
   >Download</a>
   </div>
 
 <!-- FORM -->
-<div class="promo__form col-5 try">
-  <p class="
-    promo__form-title">Try Your <span>FREE</span> Trial Today</p>
-  <form method="post" action="handler.php">
+<div class="promo__form col-5">
+  <p class="promo__form-title">Try Your <span>FREE</span> Trial Today</p>
+  <form method="post">
 <input class="promo__form-input form-input" type="text" name="answer" minlength="2" maxlength="12" placeholder="Name"><Br>
 <input class="promo__form-input form-input" type="email" name="answer" minlength="2" maxlength="12" placeholder="Email"><Br>
 <input class="promo__form-input form-input" type="password" name="Password" minlength="2" maxlength="12" placeholder="Password"><br>
-<input class="promo__form-button" type="submit" name="answer" value="Get Started">
-</form></div>
+<input class="promo__form-button prime-button" type="submit" name="answer" value="Get Started">
+</form>
+</div>
 </div>
 </div>
   </section>
@@ -300,8 +310,8 @@
 
         <div class="review__row row">
           <div class="review__card col-4">
-            <div>
-              <p class="review__card-descr">
+            <div class="review__card-descr" >
+              <p >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Doloribus accusamus expedita repellat similique odio aspernatur
                 ex, architecto eaque quo suscipit.
@@ -321,8 +331,8 @@
             </div>
           </div>
           <div class="review__card col-4">
-            <div>
-              <p class="review__card-descr">
+            <div class="review__card-descr">
+              <p >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Doloribus accusamus expedita repellat similique odio aspernatur
                 ex, architecto eaque quo suscipit.
@@ -342,8 +352,8 @@
             </div>
           </div>
           <div class="review__card col-4">
-            <div>
-              <p class="review__card-descr">
+            <div class="review__card-descr">
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Doloribus accusamus expedita repellat similique odio aspernatur
                 ex, architecto eaque quo suscipit.
@@ -378,7 +388,7 @@
           </div>
         </div>
       <a
-        class="stylish__button prime-button"
+        class="stylish__button outline-button"
         href="./https://catalog.onliner.by/"
         target="_blank"
         >Download</a
@@ -397,30 +407,27 @@
           </div>
         </div>
       
-        <div class="contact__row row">
+        <form class="contact__form row" method="post">
       
-      <form class="contact__form col-6" method="post" action="handler.php">
+      <div class="form-block col-6" >
           <input class="contact__form-input form-input" type="text" name="answer" minlength="2" maxlength="12" placeholder="Name"><Br>
           <input class="contact__form-input form-input" type="email" name="answer" minlength="2" maxlength="40" placeholder="Email"><Br>
           <input class="contact__form-input form-input" type="password" name="Password" minlength="2" maxlength="40" placeholder="Password">
-      </form>
-      <form class="contact__form col-6" method="post" action="handler.php">
+      </div>
+      <div class="form-block  col-6">
        <textarea class="contact__form-input contact-message form-input" placeholder="Message" name="Message" cols="30" rows="10">Message</textarea> 
-      </form>
-        </div>
-        <a
-        class="contact__button prime-button"
-        href="./https://catalog.onliner.by/"
-        target="_blank"
-        >Send Message</a>
+      </div>
+        <input type="submit" class="contact__button prime-button" value="Send Message">
+       </div>
+         </form> 
       </div>
     </section>
 
     <!-- ----секция footer----------------- -->
     <section class="footer">
       <div class="container">
-        <div class="footer__row row">
-          <ul class="footer__navigator col-6">
+        <div class="footer__row">
+          <ul class="footer__navigator">
             <li class="footer__item-icon"><svg width="24" height="43" viewBox="0 0 24 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.38853 42.6584H14.2552V24.9029H22.2441L23.1219 16.0806H14.2552V11.6251C14.2552 11.0372 14.4887 10.4734 14.9044 10.0577C15.3201 9.64196 15.884 9.40841 16.4719 9.40841H23.1219V0.541748H16.4719C13.5324 0.541748 10.7133 1.70945 8.63476 3.78798C6.55623 5.86651 5.38853 8.6856 5.38853 11.6251V16.0806H0.955192L0.0773926 24.9029H5.38853V42.6584Z" fill="#CCCCCC"/>
               </svg></li>
@@ -446,13 +453,11 @@
             <path d="M0.866669 0.842041V7.11521C16.4498 7.11521 29.0848 19.7502 29.0848 35.3334H35.358C35.358 16.2922 19.9078 0.842041 0.866669 0.842041ZM0.866669 13.3884V19.6615C9.51167 19.6615 16.5385 26.6884 16.5385 35.3334H22.8117C22.8117 23.2082 12.9918 13.3884 0.866669 13.3884Z" fill="#CCCCCC"/>
             </svg></li>
           </ul>
-          <p class="footer__subtitle">© 2015 Axure Themes
+               <p class="footer__copyright">© 2015 Axure Themes
           </p>
         </div>
       </div>
     </section>
-
-    <script src="./assets/js/script.js" defer></script>
 
   </body>
 </html>
