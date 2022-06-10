@@ -15,14 +15,15 @@
     <!-- <meta name="viewport" content="width=1024" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-      
-    />
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    
     <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
     <script src="./assets/js/script.js" defer></script>
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     
@@ -38,33 +39,33 @@
           <nav class="header__navigator">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__item-link" href="#">Features</a>
+                <a class="header__item-link js-scroll" href="#features">Features</a>
               </li>
               <li class="header__item header__item_has-child">
-                <a class="header__item-link" href="#">About</a>
+                <a class="header__item-link" href="#contact">About</a>
                 <ul class="header__submenu">
-                  <li class="header__submenu-item"><a href="" class="header__submenu-link">Company</a></li>
+                  <li class="header__submenu-item"><a href="" class="header__submenu-link js-scroll">Company</a></li>
                 <li class="header__submenu-item header__submenu-item_has-child"><a href="" class="header__submenu-link">Vacancy</a>
                 <ul class="header__presubmenu">
-                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link">Manager</a></li>
-                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link">Designer</a></li>
-                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link">Developer</a></li>
-                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link">QA-engineer</a></li>
+                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link js-scroll">Manager</a></li>
+                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link js-scroll">Designer</a></li>
+                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link js-scroll">Developer</a></li>
+                  <li class="header__presubmenu-item"><a href="" class="header__presubmenu-link js-scroll">QA-engineer</a></li>
                 </ul>
                 </li>
                 
-                <li class="header__submenu-item"><a href="" class="header__submenu-link">Contacts</a></li>
-                <li class="header__submenu-item"><a href="" class="header__submenu-link">Teem</a></li>
+                <li class="header__submenu-item"><a href="" class="header__submenu-link ">Contacts</a></li>
+                <li class="header__submenu-item"><a href="" class="header__submenu-link js-scroll">Teem</a></li>
                 </ul>
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#">Pricing</a>
+                <a class="header__item-link js-scrol pricingScroll" href="#pricing">Pricing</a>
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#">Reviews</a>
+                <a class="header__item-link js-scroll reviewScroll" href="#reviewScroll">Reviews</a>
               </li>
               <li class="header__item">
-                <a class="header__item-link" href="#">Contact</a>
+                <a class="header__item-link js-scroll contact" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -74,7 +75,7 @@
 
 
   <!-- -------Promo-------- -->
-  <section class="promo">
+  <section class="promo" id="features">
     <div class="container">
       <div class="row">
       <div class="promo__info col-7">
@@ -83,21 +84,20 @@
   </div>
   <!--   баннер -->
   <div class="promo__head ">
-    <p class="promo__title">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL<br> PROTOTYPES</p>
+    <p class="promo__title animate__animated animate__tada">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL<br> PROTOTYPES</p>
   </div>
   
 
   <p class="promo__subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
 <!--    форма  -->
-  <a
-  class="outline-button promo__button"
-  href="./https://catalog.onliner.by/"
-  target="_blank"
-  >Download</a>
+  <input
+  class="button outline-button promo__button"
+  type="submit"
+  >Download</input>
   </div>
 
 <!-- FORM -->
-<div class="promo__form col-5">
+<div class="promo__form col-5 animate__backInDown">
   <p class="promo__form-title">Try Your <span>FREE</span> Trial Today</p>
   <form method="post">
 <input class="promo__form-input form-input" type="text" name="answer" minlength="2" maxlength="12" placeholder="Name"><Br>
@@ -191,11 +191,24 @@
     </section>
 
 <!-- ------Tabs start---------- -->
-<section class="tabs">
+<section class="tabs" id="tabs">
   <div class="container">
-    <div class="row">
-      <div class="tabs-block col-6">
+     
+      <div class="content">
+        <div class="tab">
+          <nav class="tab__items col-6">
+            <a href="#tab_01" class="tabs__item tabs-border"><span>tab 1</span></a>
+            <a href="#tab_02" class="tabs__item tabs-border"><span>tab 2</span></a>
+            <a href="#tab_03" class="tabs__item tabs-border"><span>tab 3</span></a>
+          </nav>
+        </div>
+    </div>
+
+    
+    <div class="row tabs__row" id="tab_01">
+      <div class="tabs-block col-6"  >
         <div class="tabs-block__info">
+
 <h3 class="tabs-block__info-title">Tabs with soft transitioning effect.</h3>
 <div class="tabs-block__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </br>
   
@@ -211,19 +224,61 @@ bibendum laoreet.</div>
         <button class="tabs__button prime-button" type="submit">Download</button>
          </div>
 
+         <div class="tabs-block col-5">
+          <img class="tabs-block__pic" src="./assets/image/tab/liberty.jpg" alt="Statue of Liberty"> 
+        </div>
 
-        
-
-
-
-
-      <div class="tabs-block col-5">
-        <img class="tabs-block__pic" src="./assets/image/tab/liberty.jpg" alt="Statue of Liberty"> </div>
     </div>
+        <div class="row tabs__row" id="tab_02">
+      <div class="tabs-block col-6" >
+        <div class="tabs-block__info">
+
+<h3 class="tabs-block__info-title">Tabs with soft transitioning effect.</h3>
+<div class="tabs-block__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </br>
+  
+  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra </br>
+  
+  justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+  penatibus et magnis dis parturient montes.</br></br>
+  
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </br>
+bibendum laoreet.</div>
+        </div>
+        <button class="tabs__button prime-button" type="submit">Download</button>
+         </div>
+         <div class="tabs-block col-5">
+          <img class="tabs-block__pic" src="./assets/image/tab/St. Patrick's Cathedral.jpg" alt="Cathedraly"> 
+        </div>
+        </div>
+
+        <div class="row tabs__row"id="tab_03" >
+      <div class="tabs-block col-6" >
+        <div class="tabs-block__info">
+
+<h3 class="tabs-block__info-title">Tabs with soft transitioning effect.</h3>
+<div class="tabs-block__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </br>
+  
+  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra </br>
+  
+  justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+  penatibus et magnis dis parturient montes.</br></br>
+  
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </br>
+bibendum laoreet.</div>
+        </div>
+        <button class="tabs__button prime-button" type="submit">Download</button>
+            </div>
+         <div class="tabs-block col-5">
+          <img class="tabs-block__pic" src="./assets/image/tab/brooklyn-bridge.jpg" alt="Bridge"> 
+        </div>
+        </div>
+      
   </div>
 </section>
 
-<!-- ------Tabs end---------- -->
+<!-- ------Tabs end-- -->
 
 
 
@@ -287,7 +342,7 @@ bibendum laoreet.</div>
     </section>
 
     <!-- pricing options -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <div class="head">
           <h2 class="head__title">pricing options</h2>
@@ -343,7 +398,7 @@ bibendum laoreet.</div>
       </div>
     </section>
     <!-- Review--------------------- -->
-    <section class="review">
+    <section class="review" id="reviewScroll">
       <div class="container">
         <div class="head">
           <div class="head__title">what our customers are saying</div>
@@ -441,7 +496,7 @@ bibendum laoreet.</div>
     </section>
 
     <!-- Contact  -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
       
         <div class="head">
