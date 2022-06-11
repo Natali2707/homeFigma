@@ -264,7 +264,6 @@ html {
 
 .header__item-link:hover {
   color: var(--accentColor);
-  /* transform: rotate(90deg); */
 }
 
 /* Promo  start*/
@@ -439,9 +438,16 @@ html {
   position: relative;
   padding-bottom: 50px;
   padding-left: 82px;
-  height: 50vh;
+  height: 40vh;
 }
 
+@media (max-width: 768px) {
+  .tabs { 
+    padding-bottom: 30px;
+    height: 90vh;
+  }
+}
+ 
 .tab__items {
   margin-top: 100px;
 }
@@ -489,6 +495,20 @@ html {
   display: -webkit-inline-box;
 }
 
+.tabs-block__info{
+}
+
+@media (max-width: 992px) {
+  .tabs-block__info{
+    flex-shrink: 1;
+  }
+}
+@media (max-width: 768px) {
+   { 
+    padding-bottom: 30px;
+    height: 90vh;
+  }
+}
 .tabs-block__info-title {
   font-family: "Open Sans";
   font-weight: 700;
@@ -512,7 +532,7 @@ html {
 
 /* -------WHY----------- */
 .why {
-  /* padding-top: 50px; */
+  padding-top: 50px;
   padding-bottom: 58px;
 }
 
